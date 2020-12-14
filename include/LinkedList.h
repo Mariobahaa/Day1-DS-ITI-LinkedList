@@ -101,7 +101,35 @@ public:
 
     void DeleteByIndex(int index)
     {
+        Node<T> *pDelete = Search(index);
 
+        if(pDelete == NULL)
+            return;
+
+        if(pDelete == head)
+        {
+            if(pDelete == tail) // if(head->Next == NULL)
+            {
+                head = tail = NULL;
+            }
+            else
+            {
+                head = head->Next;
+                head->Prev = NULL;
+            }
+        }
+        else if(pDelete == tail)
+        {
+            tail = tail->Prev;
+            tail->Next = NULL;
+        }
+        else
+        {
+            pDelete->Prev->Next = pDelete->Next; // A->Next = B
+            pDelete->Next->Prev = pDelete->Prev; // B->Prev = A
+        }
+
+        delete pDelete;
     }
 
     void Reverse()
@@ -124,6 +152,22 @@ private:
 
         return NULL;
     }
+
+    Node<T>* Search(int ind)
+    {
+        Node<T> *current = head;
+
+        while(ind!=0)
+        {
+            current = current->Next;
+            ind--;
+        }
+
+        return current;
+    }
+
 };
+
+
 
 #endif // LINKEDLIST_H

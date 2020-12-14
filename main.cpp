@@ -16,7 +16,7 @@ int main()
     //L.Add(5);
     //L.Add(7);
     //L.Add(9);
-
+    L.DeleteByIndex(0);
     L.Display();
 
     //L.InsertAfter(5, 6);
