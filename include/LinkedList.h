@@ -157,7 +157,7 @@ private:
     {
         Node<T> *current = head;
 
-        while(ind!=0)
+        while(ind!=0 || current==NULL)
         {
             current = current->Next;
             ind--;
