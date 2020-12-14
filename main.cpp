@@ -12,11 +12,12 @@ int main()
     L.Add(&a);
     L.Add(new int(4));
     L.Add(new int(6));
-    L.InsertAfter(new int(1),new int(5));
+    //L.InsertAfter(new int(1),new int(5));
     //L.Add(5);
     //L.Add(7);
     //L.Add(9);
-    L.DeleteByIndex(0);
+    //L.DeleteByIndex(0);
+    L.Reverse();
     L.Display();
 
     //L.InsertAfter(5, 6);

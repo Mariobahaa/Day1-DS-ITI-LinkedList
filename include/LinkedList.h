@@ -134,7 +134,16 @@ public:
 
     void Reverse()
     {
-
+        Node<T> *current = head;
+        while(current!=NULL){
+            Node<T>*temp = current->Next;
+            current->Next = current->Prev;
+            current->Prev = temp;
+            current = temp;
+        }
+        Node<T>*temp = head;
+        head = tail;
+        tail = head;
     }
 
 private:
