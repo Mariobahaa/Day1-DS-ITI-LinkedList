@@ -174,6 +174,7 @@ private:
 
     Node<T>* Search(int ind)
     {
+        if(ind <0) return NULL;
         Node<T> *current = head;
 
         while(ind!=0 || current==NULL)

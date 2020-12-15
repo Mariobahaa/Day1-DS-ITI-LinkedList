@@ -8,16 +8,17 @@ using namespace std;
 
 int main()
 {
-    /*LinkedList<int> L;
+    /*
+    LinkedList<int> L;
     int a = 3;
     L.Add(&a);
     L.Add(new int(4));
     L.Add(new int(6));
     //L.InsertAfter(new int(1),new int(5));
     //L.DeleteByIndex(0);
-    L.Reverse();
-    L.Display();*/
-
+    //L.Reverse();
+    L.Display();
+    */
     /*
     LLStack<int> Stk;
     Stk.push(new int(1));
@@ -37,12 +38,19 @@ int main()
 
     Q.display();*/
 
-    LLQueue<int> Q;
+    /*LLQueue<int> Q;
     Q.enqueue(new int(1));
     Q.dequeue();
     Q.dequeue();
-    Q.display();
+    Q.display();*/
 
+    /*
+    LLStack<int> Stk;
+    Stk.push(new int(1));
+    Stk.pop();
+    Stk.pop();
+    Stk.display();
+    */
 
     return 0;
 }
