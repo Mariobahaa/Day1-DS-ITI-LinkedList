@@ -19,6 +19,7 @@ class LLStack
         }
 
         T*pop(){
+            if(stk.getHead()==NULL) return NULL;
             T*temp = stk.getTail();
             stk.DeleteByIndex(top);
             top--;

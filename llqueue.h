@@ -15,6 +15,7 @@ class LLQueue
         }
 
         T* dequeue(){
+            if(Q.getHead()==NULL) return NULL;
             T*temp = Q.getHead();
             Q.DeleteByIndex(0);
             return temp;

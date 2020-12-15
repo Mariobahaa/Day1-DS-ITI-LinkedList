@@ -9,7 +9,6 @@ using namespace std;
 int main()
 {
     /*LinkedList<int> L;
-
     int a = 3;
     L.Add(&a);
     L.Add(new int(4));
@@ -27,6 +26,8 @@ int main()
     cout << *Stk.pop() << endl << endl;
     cout << *Stk.last() << endl << endl;
     Stk.display();*/
+
+    /*
     LLQueue<int> Q;
     Q.enqueue(new int(1));
     Q.enqueue(new int(2));
@@ -34,9 +35,13 @@ int main()
     cout << *Q.dequeue() << endl << endl;
     cout << *Q.first() << endl << endl;
 
+    Q.display();*/
+
+    LLQueue<int> Q;
+    Q.enqueue(new int(1));
+    Q.dequeue();
+    Q.dequeue();
     Q.display();
-
-
 
 
     return 0;

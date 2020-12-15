@@ -18,10 +18,12 @@ public:
 
     //T ret *... in main remove * from cout, make fn ret T instead of *T
     T*getHead(){
+        if(head==NULL) return NULL;
         return head->Data;
     }
     //T ret *... in main remove * from cout, make fn ret T instead of *T
     T*getTail(){
+        if(tail==NULL) return NULL;
         return tail->Data;
     }
     //void Add(Node *newNode);
