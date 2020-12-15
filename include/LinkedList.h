@@ -16,10 +16,11 @@ public:
         head = tail = NULL;
     }
 
+    //T ret *... in main remove * from cout, make fn ret T instead of *T
     T*getHead(){
         return head->Data;
     }
-
+    //T ret *... in main remove * from cout, make fn ret T instead of *T
     T*getTail(){
         return tail->Data;
     }

@@ -21,6 +21,7 @@ class LLStack
         T*pop(){
             T*temp = stk.getTail();
             stk.DeleteByIndex(top);
+            top--;
             return temp;
 
         }
