@@ -16,6 +16,13 @@ public:
         head = tail = NULL;
     }
 
+    T*getHead(){
+        return head->Data;
+    }
+
+    T*getTail(){
+        return tail->Data;
+    }
     //void Add(Node *newNode);
 
     void Add(T *data)

@@ -1,12 +1,13 @@
 #include <iostream>
 
 #include "E:\Career\ITI\CDB\Day1-DS-ITI\include\LinkedList.h"
+#include "LLStack.h"
 
 using namespace std;
 
 int main()
 {
-    LinkedList<int> L;
+    /*LinkedList<int> L;
 
     int a = 3;
     L.Add(&a);
@@ -18,7 +19,15 @@ int main()
     //L.Add(9);
     //L.DeleteByIndex(0);
     L.Reverse();
-    L.Display();
+    L.Display();*/
+    LLStack<int> Stk;
+    Stk.push(new int(1));
+    Stk.push(new int(2));
+    Stk.push(new int(3));
+    cout << *Stk.pop() << endl << endl;
+
+    Stk.display();
+
 
     //L.InsertAfter(5, 6);
     //L.Delete(3);

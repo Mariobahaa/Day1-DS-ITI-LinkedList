@@ -1,16 +1,35 @@
 #ifndef LLSTACK_H
 #define LLSTACK_H
 
+#include "E:\Career\ITI\CDB\Day1-DS-ITI\include\LinkedList.h"
+#include<iostream>
 
+using namespace std;
+
+template<class T>
 class LLStack
 {
+    private:
+    LinkedList<T> stk;
+    int top;
     public:
-        LLStack();
-        virtual ~LLStack();
+        void push(T*data){
+            stk.Add(data);
+            top++;
+        }
+
+        T*pop(){
+            T*temp = stk.getTail();
+            stk.DeleteByIndex(top);
+            return temp;
+
+        }
+        LLStack(){top=-1;}
+        void display(){stk.Display();}
+        //virtual ~LLStack();
 
     protected:
 
-    private:
 };
 
 #endif // LLSTACK_H

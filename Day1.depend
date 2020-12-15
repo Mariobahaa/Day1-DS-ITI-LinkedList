@@ -1,10 +1,18 @@
 # depslib dependency file v1.0
-1607986908 source:e:\career\iti\cdb\day1-ds-iti\main.cpp
+1607990523 source:e:\career\iti\cdb\day1-ds-iti\main.cpp
 	<iostream>
 	"E:\Career\ITI\CDB\Day1-DS-ITI\include\LinkedList.h"
+	"LLStack.h"
 
-1607986954 e:\career\iti\cdb\day1-ds-iti\include\linkedlist.h
+1607990636 e:\career\iti\cdb\day1-ds-iti\include\linkedlist.h
 	"Node.h"
 
-1607950475 e:\career\iti\cdb\day1-ds-iti\include\node.h
+1607990205 e:\career\iti\cdb\day1-ds-iti\include\node.h
+	<iostream>
+
+1607990236 source:e:\career\iti\cdb\day1-ds-iti\llstack.cpp
+
+1607991031 e:\career\iti\cdb\day1-ds-iti\llstack.h
+	"E:\Career\ITI\CDB\Day1-DS-ITI\include\LinkedList.h"
+	<iostream>
 
