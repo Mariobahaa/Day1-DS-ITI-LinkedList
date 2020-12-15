@@ -27,6 +27,10 @@ class LLStack
         }
         LLStack(){top=-1;}
         void display(){stk.Display();}
+
+        T*last(){
+            return stk.getTail();
+        }
         //virtual ~LLStack();
 
     protected:

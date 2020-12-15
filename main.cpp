@@ -18,25 +18,26 @@ int main()
     //L.DeleteByIndex(0);
     L.Reverse();
     L.Display();*/
+
     /*
     LLStack<int> Stk;
     Stk.push(new int(1));
     Stk.push(new int(2));
     Stk.push(new int(3));
     cout << *Stk.pop() << endl << endl;
-
-    Stk.display();
-    /*LLQueue<int> Q;
+    cout << *Stk.last() << endl << endl;
+    Stk.display();*/
+    LLQueue<int> Q;
     Q.enqueue(new int(1));
     Q.enqueue(new int(2));
     Q.enqueue(new int(3));
     cout << *Q.dequeue() << endl << endl;
+    cout << *Q.first() << endl << endl;
 
-    Q.display();*/
+    Q.display();
 
 
-    //L.InsertAfter(5, 6);
-    //L.Delete(3);
+
 
     return 0;
 }

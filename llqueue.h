@@ -20,6 +20,10 @@ class LLQueue
             return temp;
         }
 
+        T*first(){
+            return Q.getHead();
+        }
+
         void display(){Q.Display();}
 
         //virtual ~LLQueue();
