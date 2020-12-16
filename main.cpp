@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-
+/*
     LinkedList<int> L;
     int a = 3;
     L.Add(&a);
@@ -18,7 +18,7 @@ int main()
    // L.DeleteByIndex(-1);
     //L.Reverse();
     L.Display();
-
+*/
 
 /*
     LLStack<int> Stk;
