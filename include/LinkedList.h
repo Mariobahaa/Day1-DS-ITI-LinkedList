@@ -163,7 +163,7 @@ private:
 
         while(current != NULL)
         {
-            if(*(current->Data) == *data)
+            if(current->Data == data)
                 return current;
 
             current = current->Next;
